@@ -18,8 +18,7 @@ public class ZetCard extends Card
   
   private static int idMaker(int number, int shape, int fill, int color)
   {
-    double a = 20/3;
-    return (int)(number*a + shape*a + fill*a + color*a);
+    return 27*(number-1) + 9*(shape-1) + 3*(fill-1) + color-1;
   }
   
   public int getNumber()
