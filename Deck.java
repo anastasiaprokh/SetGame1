@@ -60,6 +60,9 @@ public class Deck
   
   public Card takeTop()
   {
+    if (isEmpty())
+      return null;
+      
     return deck.remove(deck.size()-1);
   }
   
